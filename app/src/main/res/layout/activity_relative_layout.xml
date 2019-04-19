@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeLayoutActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_alignParentLeft="true"
+        android:text="Hello World"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:id="@+id/castle"
+        android:layout_toEndOf="@id/title"
+        android:layout_toRightOf="@id/title"
+        android:src="@drawable/img1"
+        android:layout_margin="8dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:id="@+id/flower"
+        android:layout_margin="8dp"
+        android:src="@drawable/img2"
+        android:layout_below="@id/title"
+        android:layout_toLeftOf="@id/castle"
+        android:scaleType="centerCrop"
+        />
+
+
+</RelativeLayout>
